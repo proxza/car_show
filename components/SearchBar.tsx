@@ -1,5 +1,19 @@
+"use client";
+
+import SearchManufacturer from "./SearchManufacturer";
+import { useState } from "react";
+
 const SearchBar = () => {
-  return <div>SearchBar</div>;
+  const [manufacturer, setManufacturer] = useState("");
+  const handleSearch = () => {};
+
+  return (
+    <form className="searchBar" onSubmit={handleSearch}>
+      <div className="searchbar__item">
+        <SearchManufacturer />
+      </div>
+    </form>
+  );
 };
 
 export default SearchBar;
